@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Click Counter</string>
+    <string name="txt_button_minus">-</string>
+    <string name="reset_button_text">Reset</string>
+    <string name="plus_button_text">+</string>
+    <string name="minus_button_text">-</string>
+    <string name="count_text">PH</string>
+</resources>
