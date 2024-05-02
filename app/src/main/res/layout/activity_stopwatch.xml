@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stopwatch_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:gravity="top|center">
+
+    <TextView
+        android:id="@+id/stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="00:00:00"
+        android:textColor="@color/text_color"
+        android:textSize="70sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lap1"
+        android:text="Lap 1: "
+        android:textSize="23sp"
+        android:layout_below="@id/stopwatch"
+        android:layout_alignStart="@id/stopwatch"
+        android:layout_alignEnd="@id/stopwatch"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lap2"
+        android:text="Lap 2: "
+        android:textSize="23sp"
+        android:layout_below="@id/lap1"
+        android:layout_alignStart="@id/stopwatch"
+        android:layout_alignEnd="@id/stopwatch"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lap3"
+        android:text="Lap 3: "
+        android:textSize="23sp"
+        android:layout_below="@id/lap2"
+        android:layout_alignStart="@id/stopwatch"
+        android:layout_alignEnd="@id/stopwatch"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lap4"
+        android:text="Lap 4: "
+        android:textSize="23sp"
+        android:layout_below="@id/lap3"
+        android:layout_alignStart="@id/stopwatch"
+        android:layout_alignEnd="@id/stopwatch"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:layout_toStartOf="@id/btnStop"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_toEndOf="@id/btnStop"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
