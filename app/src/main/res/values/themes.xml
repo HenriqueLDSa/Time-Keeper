@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.ClickCounter" parent="Base.Theme.ClickCounter" />
+
+    <style name="CustomNumberPicker">
+        <item name="colorControlNormal">@color/black</item> <!-- For the arrows -->
+        <item name="colorControlActivated">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
 </resources>
