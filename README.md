@@ -1,49 +1,50 @@
-# Simple Click Counter App
+# TimeKeeper
 
-## Introduction
-The Simple Click Counter App is a straightforward Android application developed in Java. It allows users to increment, decrement, and reset a counter, making it a perfect tool for keeping simple tallies.
+TimeKeeper is a versatile Android application designed to assist users with various time-related functionalities. Whether you need to count events, measure time intervals, countdown to important moments, or set alarms for specific occasions, TimeKeeper has you covered. This app combines a user-friendly interface with powerful features to enhance your time management capabilities.
 
 ## Features
-- **Increment Button**: Increases the counter by one.
-- **Decrement Button**: Decreases the counter by one.
-- **Reset Button**: Resets the counter to zero.
-- **Display Field**: Shows the current count in a text field.
+
+### Click Counter
+- **Plus Button**: Increment the counter to keep track of events.
+- **Minus Button**: Decrement the counter if needed.
+- **Reset Button**: Reset the counter back to zero.
+
+### Stopwatch
+- **Start Button**: Initiate the timing sequence.
+- **Stop/Pause Button**: Pause the stopwatch to take note of time intervals or stop the session.
+- **Reset Button**: Reset the stopwatch to zero.
+- **Lap Functionality**: Record up to four laps. Laps are updated each time the stopwatch is paused, allowing users to keep track of intervals.
+
+### Countdown Timer
+- **Set Time**: Users can input a specific duration.
+- **Time Display**: See the time decrement in real time.
+- **Progress Bar**: A circular progress bar visually represents the countdown, providing a clear indication of time left.
+
+### Alarms
+- **Set Date and Time**: Schedule alarms for specific dates and times.
+- **Choose Ringtone**: Personalize alarms by selecting a ringtone from your phone's library.
+- **Multiple Alarms**: Manage multiple alarms to cater to different scheduling needs.
 
 ## Getting Started
 
-### Prerequisites
-Before you begin, ensure you have the following installed:
-- Android Studio
-- Git
+To get started with TimeKeeper, clone this repository and import the project into Android Studio. Ensure you have the latest version of Android Studio and the Android SDK to avoid compatibility issues.
 
-### Installation
-To install the Click Counter App, follow these steps:
+```bash
+git clone https://github.com/yourusername/TimeKeeper.git
+```
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/click-counter-app.git
-   ```
-   Replace `yourusername` with your GitHub username.
-
-2. **Open the project in Android Studio:**
-   - Open Android Studio.
-   - Select "Open an Existing Project" and navigate to the project's directory.
-   - Let Android Studio build the project automatically.
-
-3. **Run the app:**
-   - Connect your Android device to your computer via USB.
-   - Ensure USB debugging is enabled on your device.
-   - Run the app from Android Studio by pressing the 'Run' button, selecting your device from the list.
-
-## Usage
-To use the app:
-- Tap the **+** button to increase the counter.
-- Tap the **-** button to decrease the counter.
-- Tap the **Reset** button to reset the counter to zero.
-- The display field shows the current counter value.
+Open the project in Android Studio, build it, and run it on an Android device or emulator.
 
 ## Contributing
-Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+Distributed under the MIT License. See `LICENSE` for more information.
