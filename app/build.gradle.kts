@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.application.clickcounter"
+    namespace = "com.application.timekeeper"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.application.clickcounter"
+        applicationId = "com.application.timekeeper"
         minSdk = 30
         targetSdk = 34
         versionCode = 1

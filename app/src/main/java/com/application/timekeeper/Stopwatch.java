@@ -1,4 +1,4 @@
-package com.application.clickcounter;
+package com.application.timekeeper;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

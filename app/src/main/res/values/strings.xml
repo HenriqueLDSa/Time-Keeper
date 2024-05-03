@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Click Counter</string>
+    <string name="app_name">TimeKeeper</string>
     <string name="txt_button_minus">-</string>
     <string name="reset_button_text">Reset</string>
     <string name="plus_button_text">+</string>
