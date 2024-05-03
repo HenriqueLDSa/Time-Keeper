@@ -1,6 +1,6 @@
 # TimeKeeper
 
-TimeKeeper is a versatile Android application designed to assist users with various time-related functionalities. Whether you need to count events, measure time intervals, countdown to important moments, or set alarms for specific occasions, TimeKeeper has you covered. This app combines a user-friendly interface with powerful features to enhance your time management capabilities.
+TimeKeeper is an Android application designed to assist users with various time-related functionalities. Whether you need to count events, measure time intervals, countdown to important moments, or set alarms for specific occasions, TimeKeeper has you covered. This app combines a user-friendly interface with features to enhance your time management capabilities.
 
 ## Features
 
