@@ -16,8 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="150dp"
         android:textSize="100sp"
-        android:textColor="@color/text_color"
-        android:text="0"/>
+        android:textColor="@color/text_color" />
 
 
 

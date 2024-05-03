@@ -65,6 +65,7 @@
             android:text="@string/plus_button_text"
             android:textColor="@color/white"
             android:textSize="50sp" />
+
         <Button
             android:id="@+id/reset_button"
             style="?android:attr/buttonBarButtonStyle"
@@ -81,7 +82,8 @@
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
     </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
