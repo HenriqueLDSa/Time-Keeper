@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
-        android:text="00:00:00"
+        android:text="@string/initialtime_stopwatch_text"
         android:textColor="@color/text_color"
         android:textSize="70sp" />
 
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lap1"
-        android:text="Lap 1: "
+        android:text="@string/lap_1_text"
         android:textSize="23sp"
         android:layout_below="@id/stopwatch"
         android:layout_alignStart="@id/stopwatch"
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lap2"
-        android:text="Lap 2: "
+        android:text="@string/lap_2_text"
         android:textSize="23sp"
         android:layout_below="@id/lap1"
         android:layout_alignStart="@id/stopwatch"
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lap3"
-        android:text="Lap 3: "
+        android:text="@string/lap_3_text"
         android:textSize="23sp"
         android:layout_below="@id/lap2"
         android:layout_alignStart="@id/stopwatch"
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lap4"
-        android:text="Lap 4: "
+        android:text="@string/lap_4_text"
         android:textSize="23sp"
         android:layout_below="@id/lap3"
         android:layout_alignStart="@id/stopwatch"
@@ -67,29 +67,32 @@
         android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="@string/start_text"
         android:textSize="20sp"
         android:textColor="@color/text_color"
         android:layout_toStartOf="@id/btnStop"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"/>
 
     <Button
         android:id="@+id/btnStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop"
+        android:text="@string/stop_text"
         android:textSize="20sp"
         android:textColor="@color/text_color"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"/>
 
     <Button
         android:id="@+id/btnReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset"
+        android:text="@string/reset_text"
         android:layout_toEndOf="@id/btnStop"
         android:textSize="20sp"
         android:textColor="@color/text_color"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"/>
 </RelativeLayout>

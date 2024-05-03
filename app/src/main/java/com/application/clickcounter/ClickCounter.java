@@ -43,7 +43,7 @@ public class ClickCounter extends AppCompatActivity {
         mResetButton.setOnClickListener(buttonListener);
     }
 
-    public void updateText(String buttonText, TextView mCount) {
+    private void updateText(String buttonText, TextView mCount) {
         int num = Integer.parseInt(mCount.getText().toString());
 
         if(Objects.equals(buttonText, "-") && num > 0)
