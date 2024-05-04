@@ -2,8 +2,7 @@
     android:id="@+id/stopwatch_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="25dp"
-    android:gravity="top|center">
+    android:padding="25dp">
 
     <TextView
         android:id="@+id/stopwatch"
@@ -24,7 +23,7 @@
         android:layout_below="@id/stopwatch"
         android:layout_alignStart="@id/stopwatch"
         android:layout_alignEnd="@id/stopwatch"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:visibility="invisible"/>
 
     <TextView
@@ -63,36 +62,49 @@
         android:layout_marginTop="10dp"
         android:visibility="invisible"/>
 
-    <Button
-        android:id="@+id/btnStart"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/start_text"
-        android:textSize="20sp"
-        android:textColor="@color/text_color"
-        android:layout_toStartOf="@id/btnStop"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="25dp"/>
-
-    <Button
-        android:id="@+id/btnStop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stop_text"
-        android:textSize="20sp"
-        android:textColor="@color/text_color"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"/>
+        android:rowCount="2"
+        android:columnCount="2">
 
-    <Button
-        android:id="@+id/btnReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reset_text"
-        android:layout_toEndOf="@id/btnStop"
-        android:textSize="20sp"
-        android:textColor="@color/text_color"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="25dp"/>
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_text"
+            android:textSize="20sp"
+            android:textColor="@color/text_color"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_text"
+            android:textSize="20sp"
+            android:textColor="@color/text_color"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_text"
+            android:textSize="20sp"
+            android:textColor="@color/text_color"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnLap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lap_text"
+            android:textSize="20sp"
+            android:textColor="@color/text_color"
+            android:layout_margin="5dp"/>
+
+    </GridLayout>
 </RelativeLayout>

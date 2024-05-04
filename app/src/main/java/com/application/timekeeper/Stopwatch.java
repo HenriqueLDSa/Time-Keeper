@@ -30,6 +30,7 @@ public class Stopwatch extends AppCompatActivity{
     private long timeBuffer = 0L;
     private long currentTime = 0L;
     private Handler timeRunHandler;
+    private int iter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +45,12 @@ public class Stopwatch extends AppCompatActivity{
 
         timeRunHandler = new Handler(Looper.getMainLooper());
         isRunning = false;
+        iter = 0;
 
         Button mStartBtn = findViewById(R.id.btnStart);
         Button mStopBtn = findViewById(R.id.btnStop);
         Button mResetBtn = findViewById(R.id.btnReset);
+        Button mLapButton = findViewById(R.id.btnLap);
         mStopwatch = findViewById(R.id.stopwatch);
         mLap1 = findViewById(R.id.lap1);
         mLap2 = findViewById(R.id.lap2);
@@ -57,6 +60,7 @@ public class Stopwatch extends AppCompatActivity{
         mStartBtn.setOnClickListener(v -> updateStopwatch("Start"));
         mStopBtn.setOnClickListener(v -> updateStopwatch("Stop"));
         mResetBtn.setOnClickListener(v -> updateStopwatch("Reset"));
+        mLapButton.setOnClickListener(v -> updateStopwatch("Lap"));
     }
 
     private final Runnable runnable = new Runnable() {
@@ -101,6 +105,32 @@ public class Stopwatch extends AppCompatActivity{
                 isRunning = false;
                 timeRunHandler.removeCallbacks(runnable);
                 break;
+            case "Lap":
+                int milliseconds = (int) (currentTime % 1000) / 10;
+                int seconds = (int) (currentTime / 1000);
+                int minutes = seconds / 60;
+                seconds = seconds % 60;
+
+                if(iter == 0)
+                {
+                    mLap1.setText(String.format(Locale.US, "Lap 1: " + "%02d:%02d:%02d", minutes, seconds, milliseconds));
+                    mLap1.setVisibility(View.VISIBLE);
+                    iter++;
+                } else if (iter == 1) {
+                    mLap2.setText(String.format(Locale.US, "Lap 2: " + "%02d:%02d:%02d", minutes, seconds, milliseconds));
+                    mLap2.setVisibility(View.VISIBLE);
+                    iter++;
+                } else if (iter == 2) {
+                    mLap3.setText(String.format(Locale.US, "Lap 3: " + "%02d:%02d:%02d", minutes, seconds, milliseconds));
+                    mLap3.setVisibility(View.VISIBLE);
+                    iter++;
+                } else if (iter == 3) {
+                    mLap4.setText(String.format(Locale.US, "Lap 4: " + "%02d:%02d:%02d", minutes, seconds, milliseconds));
+                    mLap4.setVisibility(View.VISIBLE);
+                    iter++;
+                }
+
+                break;
         }
     }
 
@@ -119,5 +149,7 @@ public class Stopwatch extends AppCompatActivity{
 
         mLap4.setText("Lap 4: ");
         mLap4.setVisibility(View.INVISIBLE);
+
+        iter = 0;
     }
 }
