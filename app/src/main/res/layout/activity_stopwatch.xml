@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/stopwatch_activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stopwatch"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp">
@@ -9,102 +10,63 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:text="@string/initialtime_stopwatch_text"
         android:textColor="@color/text_color"
         android:textSize="70sp" />
 
-    <TextView
+    <ScrollView
+        android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lap1"
-        android:text="@string/lap_1_text"
-        android:textSize="23sp"
+        android:fillViewport="true"
         android:layout_below="@id/stopwatch"
+        android:layout_above="@id/buttons_container"
+        android:layout_marginVertical="50dp"
         android:layout_alignStart="@id/stopwatch"
         android:layout_alignEnd="@id/stopwatch"
-        android:layout_marginTop="50dp"
-        android:visibility="invisible"/>
+        android:fadeScrollbars="false">
 
-    <TextView
+        <LinearLayout
+            android:id="@+id/lap_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lap2"
-        android:text="@string/lap_2_text"
-        android:textSize="23sp"
-        android:layout_below="@id/lap1"
-        android:layout_alignStart="@id/stopwatch"
-        android:layout_alignEnd="@id/stopwatch"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lap3"
-        android:text="@string/lap_3_text"
-        android:textSize="23sp"
-        android:layout_below="@id/lap2"
-        android:layout_alignStart="@id/stopwatch"
-        android:layout_alignEnd="@id/stopwatch"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lap4"
-        android:text="@string/lap_4_text"
-        android:textSize="23sp"
-        android:layout_below="@id/lap3"
-        android:layout_alignStart="@id/stopwatch"
-        android:layout_alignEnd="@id/stopwatch"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible"/>
-
-    <GridLayout
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:rowCount="2"
-        android:columnCount="2">
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="75dp"
+        android:layout_marginHorizontal="25dp">
 
         <Button
             android:id="@+id/btnStart"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/start_text"
-            android:textSize="20sp"
+            android:textSize="40sp"
             android:textColor="@color/text_color"
-            android:layout_margin="5dp"/>
-
-        <Button
-            android:id="@+id/btnStop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/stop_text"
-            android:textSize="20sp"
-            android:textColor="@color/text_color"
-            android:layout_margin="5dp"/>
-
-        <Button
-            android:id="@+id/btnReset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/reset_text"
-            android:textSize="20sp"
-            android:textColor="@color/text_color"
-            android:layout_margin="5dp"/>
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/btnLap"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/lap_text"
-            android:textSize="20sp"
+            android:textSize="40sp"
             android:textColor="@color/text_color"
-            android:layout_margin="5dp"/>
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
 
-    </GridLayout>
+    </LinearLayout>
 </RelativeLayout>
