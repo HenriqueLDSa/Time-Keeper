@@ -3,6 +3,7 @@
     android:id="@+id/activity_stopwatch"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     android:padding="25dp">
 
     <TextView
@@ -19,13 +20,14 @@
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true"
-        android:layout_below="@id/stopwatch"
         android:layout_above="@id/buttons_container"
-        android:layout_marginVertical="50dp"
+        android:layout_below="@id/stopwatch"
         android:layout_alignStart="@id/stopwatch"
         android:layout_alignEnd="@id/stopwatch"
-        android:fadeScrollbars="false">
+        android:layout_marginVertical="50dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
             android:id="@+id/lap_container"
@@ -56,7 +58,7 @@
             android:textSize="40sp"
             android:textColor="@color/text_color"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/btnLap"
@@ -66,7 +68,7 @@
             android:textSize="40sp"
             android:textColor="@color/text_color"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
     </LinearLayout>
 </RelativeLayout>

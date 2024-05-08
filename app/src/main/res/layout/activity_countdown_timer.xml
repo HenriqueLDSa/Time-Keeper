@@ -9,15 +9,25 @@
     tools:context=".CountdownTimer">
 
     <TextView
+        android:id="@+id/time_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp"
-        android:textSize="100sp"
+        android:layout_marginTop="100dp"
+        android:textSize="70sp"
         android:textColor="@color/text_color" />
 
-
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="25sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

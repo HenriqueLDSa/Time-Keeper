@@ -5,7 +5,7 @@
     android:id="@+id/activity_click_counter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333333"
+    android:background="@color/background_color"
     android:padding="25dp"
     tools:context=".ClickCounter">
 
